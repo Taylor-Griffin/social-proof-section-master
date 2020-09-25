@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 5rem;
+  padding: 2rem;
+  margin-right: 10rem;
+  width: 85%;
+}
+
+h2 {
+  color: white;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  color: hsl(333, 80%, 67%);
+}
+
+header {
+  margin: 12em 0em 0 6em;
+  display: flex;
+  flex-direction: row;
+}
+
+header p {
+  color: hsl(303, 10%, 53%);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  width: 50rem;
+  margin-left: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+
+li {
+  color: hsl(300, 43%, 22%);
+  background-color: hsl(300, 24%, 96%);
+  padding: 2rem 10rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: right;
+  margin-top: 1.5rem;
+  width: 30rem;
+}
+
+.guru {
+  margin-left: 6rem;
+  text-indent: 10rem;
+  text-align: unset;
+  white-space: nowrap;
+}
+
+.besttech {
+  margin-left: 12rem;
+}
+
+.ratings {
+  position: relative;
+}
+
+.stars img {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding-left: .5rem;
+}
+
+.stars2 img {
+  margin-top: 6rem;
+  margin-left: 1rem;
+  padding-left: .5rem;
+}
+
+.stars3 img {
+  margin-top: 10rem;
+  margin-left: 1rem;
+  padding-left: .5rem;
+}
+
+.stars {
+  position: absolute;
+  top: 3rem;
+}
+
+.stars2 {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+}
+
+.stars3 {
+  position: absolute;
+  top: 9.5rem;
+  left: 12rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 3rem 8rem 20rem 7rem;
+
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  width: 40rem;
+  min-height: 100%;
+  height: auto;
+  padding: 3rem 2rem 2rem 2rem;
+  margin: 5rem 2rem 5rem .5rem;
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 90px;
+  float: left;
+  margin-right: 2rem;
+  width: 3rem;
+}
+
+.card p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 2rem;
+}
+
+.card2 {
+  position: relative;
+  top: 1rem;
+}
+
+.card3 {
+  position: relative;
+  top: 2rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:600px) {
+
+
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0 3rem 5rem 3rem;
+    align-items: center;
+    align-self: center;
+
+  }
+
+  .ratings{
+    margin-top: -12rem;
+
+  }
+
+  header {
+    margin: 12em 0em 0 6em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:70%;
+    margin:5rem auto;
+  }
+
+  .card {
+    background-color: hsl(300, 43%, 22%);
+    /* height: auto; */
+    border-radius: 10px;
+    width:90%;
+    margin:0 0 0 6rem;
+  }
+
+  .guru {
+    margin-left: 0;
+  }
+
+  .besttech {
+    margin-left: 0;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin:0;
+    Padding:0;
+  }
+
+  header p {
+    text-align: center;
+    width:60%;
+    margin:2rem 0 0 7rem;
+
+
+
+
+  }
+
+  .stars, .stars2, .stars3 {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .stars {
+    margin-left: 17rem;
+  }
+
+  .stars2 {
+    margin-left: 10.8rem;
+    margin-top: 4rem;
+  }
+
+  .stars3 {
+    margin-left: 4.8rem;
+    margin-top: 8rem;
+  }
+
+  .guru {
+    margin-left: 0;
+    text-indent: 0;
+    text-align: center;
+  }
+
+  li {
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    padding: 5rem 10rem 3rem 10rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 30rem;
+
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
